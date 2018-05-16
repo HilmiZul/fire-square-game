@@ -31,14 +31,12 @@ class Gelembung {
       reset();
     }
   }
-  
+
   void hit(Peluru p) {
-    for(int i=0; i<gelembung.length; i++){
-      if(x > p.x && x < p.x + r/2 || x < p.x && x > p.x - r) {
-        if(y > p.y && y < p.y + p.r) {
-          skor++;
-          reset();
-        }
+    if(x > p.x && x < p.x + r/2 || x < p.x && x > p.x - r) {
+      if(y > p.y && y < p.y + p.r) {
+        skor++;
+        reset();
       }
     }
   }
