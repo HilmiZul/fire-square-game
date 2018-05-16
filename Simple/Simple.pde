@@ -39,6 +39,7 @@ void draw() {
   fill(255);
   textSize(32);
   text(skor, 30, 32);
+  popStyle();
 }
 
 void keyPressed() {
